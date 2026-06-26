@@ -16,9 +16,9 @@ export default function Hero() {
       aria-label="Hero section"
       style={{
         backgroundImage: 'url(/backgroundhero.jpg)',
-        backgroundSize: 'contain',
+        backgroundSize: '100% auto',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center top',
         backgroundColor: '#181818',
       }}
     >
