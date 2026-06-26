@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { ArrowRight, MessageCircle, CheckCircle2, ChevronDown } from 'lucide-react'
 
 export default function Hero() {
@@ -107,64 +106,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT: Car composite */}
-        <div className="hero-illustration flex-1 relative flex items-end justify-center w-full min-h-[280px] lg:min-h-[460px]">
-          <div className="relative w-full max-w-2xl">
-
-            {/* Car photo */}
-            <Image
-              src="/backgroundwheel.jpg"
-              alt="Featured car at Best Wheels Iloilo"
-              width={720}
-              height={540}
-              className="w-full h-auto object-contain relative z-10"
-              style={{
-                filter: 'brightness(1.08) saturate(1.15) contrast(1.06) drop-shadow(0 24px 48px rgba(0,0,0,0.7))',
-              }}
-              priority
-            />
-
-            {/* Fade top — dissolves the canopy ceiling into the dark overlay */}
-            <div
-              className="absolute inset-x-0 top-0 z-20 pointer-events-none"
-              aria-hidden="true"
-              style={{
-                height: '42%',
-                background: 'linear-gradient(to bottom, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.55) 45%, transparent 100%)',
-              }}
-            />
-
-            {/* Fade bottom — grounds the car, removes concrete floor */}
-            <div
-              className="absolute inset-x-0 bottom-0 z-20 pointer-events-none"
-              aria-hidden="true"
-              style={{
-                height: '22%',
-                background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%)',
-              }}
-            />
-
-            {/* Fade left edge — bleeds into the brand-red left panel */}
-            <div
-              className="absolute inset-y-0 left-0 z-20 pointer-events-none"
-              aria-hidden="true"
-              style={{
-                width: '22%',
-                background: 'linear-gradient(to right, rgba(143,18,23,0.7) 0%, transparent 100%)',
-              }}
-            />
-
-            {/* Fade right edge — soft vignette */}
-            <div
-              className="absolute inset-y-0 right-0 z-20 pointer-events-none"
-              aria-hidden="true"
-              style={{
-                width: '12%',
-                background: 'linear-gradient(to left, rgba(0,0,0,0.4) 0%, transparent 100%)',
-              }}
-            />
-          </div>
-        </div>
       </div>
 
       {/* Scroll indicator */}
