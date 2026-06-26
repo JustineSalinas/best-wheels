@@ -16,17 +16,25 @@ export default function Hero() {
       aria-label="Hero section"
       style={{
         backgroundImage: 'url(/backgroundhero.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
+        backgroundSize: '130%',
+        backgroundPosition: 'center 20%',
       }}
     >
-      {/* Brand color wash — heavy red on left, fades to dark-transparent right so showroom shows through */}
+      {/* Unified dark veil — lets building and sky show through while keeping text readable */}
       <div
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
         style={{
-          background:
-            'linear-gradient(108deg, rgba(143,18,23,0.97) 0%, rgba(143,18,23,0.93) 28%, rgba(24,24,24,0.82) 52%, rgba(0,0,0,0.48) 75%, rgba(0,0,0,0.28) 100%)',
+          background: 'rgba(0,0,0,0.45)',
+        }}
+      />
+      {/* Extra red tint on the left half only — keeps headline legible */}
+      <div
+        className="absolute inset-y-0 left-0 pointer-events-none"
+        aria-hidden="true"
+        style={{
+          width: '55%',
+          background: 'linear-gradient(to right, rgba(143,18,23,0.78) 0%, rgba(143,18,23,0.50) 60%, transparent 100%)',
         }}
       />
       {/* Subtle diagonal stripe texture */}
