@@ -16,8 +16,10 @@ export default function Hero() {
       aria-label="Hero section"
       style={{
         backgroundImage: 'url(/backgroundhero.jpg)',
-        backgroundSize: '130%',
-        backgroundPosition: 'center 20%',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundColor: '#181818',
       }}
     >
       {/* Unified dark veil — lets building and sky show through while keeping text readable */}
