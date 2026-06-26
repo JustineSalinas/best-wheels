@@ -35,10 +35,10 @@ export default function Navbar() {
             alt="Best Wheels Car Display"
             width={140}
             height={48}
-            className="h-10 w-auto object-contain"
+            className="h-10 w-auto object-contain brightness-0 invert"
             priority
           />
-          <span className="font-display font-700 text-white text-xl tracking-wide leading-none hidden sm:block">
+          <span className="font-display font-extrabold text-white text-xl tracking-widest leading-none hidden sm:block uppercase">
             BEST<span className="text-brand-red"> WHEELS</span>
           </span>
         </a>

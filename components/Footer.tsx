@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="Best Wheels Car Display"
                 width={120}
                 height={40}
-                className="h-9 w-auto object-contain"
+                className="h-9 w-auto object-contain brightness-0 invert"
               />
             </div>
             <p className="text-white/50 font-body text-sm leading-relaxed">
