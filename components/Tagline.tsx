@@ -30,7 +30,7 @@ export default function Tagline() {
           Drive home quality, value, and confidence with Best Wheels.
         </p>
 
-        <p className="font-display font-extrabold text-white/90 italic text-xl sm:text-2xl tracking-wide">
+        <p className="font-display font-extrabold text-white/90 italic text-xl sm:text-2xl tracking-wide text-center max-w-none mx-auto">
           Mapa hambal ka guid —{' '}
           <span className="text-white">&ldquo;Da Best!&rdquo;</span>
         </p>
