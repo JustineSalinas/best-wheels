@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowRight, MessageCircle, CheckCircle2, ChevronDown } from 'lucide-react'
 
 export default function Hero() {
@@ -96,58 +97,35 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT: Car Illustration */}
-        <div className="hero-illustration flex-1 flex items-center justify-center relative w-full max-w-xl lg:max-w-none">
-          <div
-            className="absolute inset-0 pointer-events-none"
-            aria-hidden="true"
-            style={{
-              background: 'radial-gradient(ellipse 70% 50% at 55% 60%, rgba(255,255,255,0.08) 0%, transparent 70%)',
-            }}
-          />
+        {/* RIGHT: Car Photo */}
+        <div className="hero-illustration flex-1 flex items-end justify-center relative w-full max-w-xl lg:max-w-none min-h-[320px] lg:min-h-[420px]">
+          {/* Background scene photo */}
+          <div className="absolute inset-0 rounded-2xl overflow-hidden">
+            <Image
+              src="/backgroundhero.jpg"
+              alt="Best Wheels showroom background"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+            {/* Dark gradient overlay so car pops */}
+            <div
+              className="absolute inset-0"
+              style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)' }}
+              aria-hidden="true"
+            />
+          </div>
 
-          <div className="relative w-full max-w-lg">
-            {/* Floating info card */}
-            <div className="absolute -top-4 -left-4 sm:top-0 sm:left-8 bg-white rounded-2xl px-4 py-3 shadow-2xl z-10 min-w-[140px]">
-              <p className="text-[10px] text-ink-muted font-body uppercase tracking-widest mb-1">Latest Unit</p>
-              <p className="font-display font-700 text-ink text-base leading-tight">2025 Honda City S</p>
-              <p className="text-xs text-ink-muted font-body mt-0.5">Gray · Sedan</p>
-            </div>
-
-            {/* Top-down car SVG */}
-            <svg
-              viewBox="0 0 360 200"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-full drop-shadow-2xl"
-              aria-label="Top-down view of a sedan"
-              role="img"
-            >
-              <ellipse cx="180" cy="190" rx="150" ry="8" fill="rgba(0,0,0,0.3)" />
-              <rect x="45" y="15" width="270" height="160" rx="38" fill="white" opacity="0.92" />
-              <rect x="100" y="58" width="160" height="84" rx="6" fill="rgba(180,220,245,0.25)" />
-              <rect x="100" y="58" width="160" height="84" rx="6" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" />
-              <path d="M100 58 Q180 44 260 58" stroke="rgba(255,255,255,0.6)" strokeWidth="2" fill="none" />
-              <path d="M100 142 Q180 156 260 142" stroke="rgba(255,255,255,0.6)" strokeWidth="2" fill="none" />
-              <line x1="180" y1="58" x2="180" y2="142" stroke="rgba(255,255,255,0.35)" strokeWidth="3" />
-              <line x1="140" y1="15" x2="140" y2="175" stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-              <line x1="220" y1="15" x2="220" y2="175" stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-              <rect x="18" y="32" width="32" height="48" rx="8" fill="rgba(20,20,20,0.85)" />
-              <rect x="22" y="38" width="24" height="36" rx="5" fill="rgba(80,80,80,0.6)" />
-              <rect x="310" y="32" width="32" height="48" rx="8" fill="rgba(20,20,20,0.85)" />
-              <rect x="314" y="38" width="24" height="36" rx="5" fill="rgba(80,80,80,0.6)" />
-              <rect x="18" y="110" width="32" height="48" rx="8" fill="rgba(20,20,20,0.85)" />
-              <rect x="22" y="116" width="24" height="36" rx="5" fill="rgba(80,80,80,0.6)" />
-              <rect x="310" y="110" width="32" height="48" rx="8" fill="rgba(20,20,20,0.85)" />
-              <rect x="314" y="116" width="24" height="36" rx="5" fill="rgba(80,80,80,0.6)" />
-              <rect x="58" y="18" width="52" height="10" rx="4" fill="rgba(255,240,180,0.9)" />
-              <rect x="250" y="18" width="52" height="10" rx="4" fill="rgba(255,240,180,0.9)" />
-              <rect x="58" y="162" width="52" height="10" rx="4" fill="rgba(220,40,40,0.85)" />
-              <rect x="250" y="162" width="52" height="10" rx="4" fill="rgba(220,40,40,0.85)" />
-              <rect x="100" y="18" width="160" height="5" rx="2" fill="rgba(180,180,180,0.4)" />
-              <rect x="100" y="167" width="160" height="4" rx="2" fill="rgba(180,180,180,0.3)" />
-              <circle cx="180" cy="35" r="5" fill="rgba(255,255,255,0.3)" />
-            </svg>
+          {/* Car photo on top */}
+          <div className="relative z-10 w-full px-4 pb-2 drop-shadow-2xl">
+            <Image
+              src="/backgroundwheel.jpg"
+              alt="Best Wheels featured car"
+              width={640}
+              height={360}
+              className="w-full h-auto object-contain"
+              priority
+            />
           </div>
         </div>
       </div>
