@@ -4,6 +4,7 @@ import TrustStrip from '@/components/TrustStrip'
 import InventorySection from '@/components/InventorySection'
 import Tagline from '@/components/Tagline'
 import WhyUs from '@/components/WhyUs'
+import BenefitsSection from '@/components/BenefitsSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 
@@ -17,6 +18,7 @@ export default function Home() {
         <InventorySection />
         <Tagline />
         <WhyUs />
+        <BenefitsSection />
         <ContactSection />
       </main>
       <Footer />
