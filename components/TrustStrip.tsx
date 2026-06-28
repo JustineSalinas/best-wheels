@@ -1,7 +1,7 @@
 import { Car, BadgeCheck, HeartPulse, Banknote } from 'lucide-react'
 
 const stats = [
-  { value: '10+', label: 'Units Available', Icon: Car },
+  { value: '21', label: 'Units Available', Icon: Car },
   { value: '100%', label: 'Verified Units', Icon: BadgeCheck },
   { value: 'Lifetime', label: 'Free Check-Up', Icon: HeartPulse },
   { value: 'Cash', label: 'Big Discounts', Icon: Banknote },

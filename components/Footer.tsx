@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-3 mb-12">
           {/* Brand */}
           <div>
-            <div className="mb-4">
+            <div className="mb-4 flex items-center gap-3">
               <Image
                 src="/bestwheels.png"
                 alt="Best Wheels Car Display"
@@ -18,6 +18,9 @@ export default function Footer() {
                 height={40}
                 className="h-9 w-auto object-contain brightness-0 invert"
               />
+              <span className="font-display font-800 text-white text-lg tracking-wide leading-tight">
+                BEST WHEELS
+              </span>
             </div>
             <p className="text-white/50 font-body text-sm leading-relaxed">
               Iloilo City&apos;s trusted local dealer for bank repos, 2nd hand, and slightly
