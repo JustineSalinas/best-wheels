@@ -114,18 +114,18 @@ export default function ContactSection() {
               ))}
             </div>
 
-            {/* Map placeholder */}
-            <div className="reveal reveal-delay-2 mt-8 rounded-2xl overflow-hidden border border-border h-48 bg-surface-2 flex items-center justify-center">
-              <a
-                href="https://maps.google.com/?q=Guzman-Jesena+St+Iloilo+City+Philippines"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center gap-2 text-ink-muted hover:text-brand-red transition-colors"
-              >
-                <MapPin size={32} aria-hidden="true" />
-                <span className="font-body text-sm font-600">View on Google Maps</span>
-                <span className="font-body text-xs">Guzman-Jesena St., Iloilo City</span>
-              </a>
+            {/* Embedded map */}
+            <div className="reveal reveal-delay-2 mt-8 rounded-2xl overflow-hidden border border-border h-56">
+              <iframe
+                src="https://maps.google.com/maps?q=Guzman-Jesena+St+Iloilo+City+Philippines&z=17&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Best Wheels Car Display - Guzman-Jesena St., Iloilo City"
+              />
             </div>
           </div>
 

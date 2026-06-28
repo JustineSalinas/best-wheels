@@ -1,13 +1,15 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { cars, ALL_BRANDS, ALL_BODY_TYPES } from '@/lib/cars'
+import { cars, ALL_BRANDS, ALL_BODY_TYPES, Car } from '@/lib/cars'
 import CarCard from './CarCard'
+import CarDetailModal from './CarDetailModal'
 
 export default function InventorySection() {
   const [activeBrand, setActiveBrand] = useState<string>('All')
   const [activeBody, setActiveBody] = useState<string>('All')
   const [search, setSearch] = useState('')
+  const [selectedCar, setSelectedCar] = useState<Car | null>(null)
   const sectionRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -47,7 +49,7 @@ export default function InventorySection() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Section header */}
         <div className="reveal mb-10">
-          <p className="text-brand-red font-body font-600 text-sm mb-2">Sedan &amp; Hatchback</p>
+          <p className="text-brand-red font-body font-600 text-sm mb-2">Sedan · Hatchback · Pickup Truck · SUV · MPV</p>
           <h2
             className="font-display font-800 text-ink"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}
@@ -139,7 +141,7 @@ export default function InventorySection() {
             }}
           >
             {filtered.map((car) => (
-              <CarCard key={car.id} car={car} />
+              <CarCard key={car.id} car={car} onClick={() => setSelectedCar(car)} />
             ))}
           </div>
         ) : (
@@ -176,6 +178,8 @@ export default function InventorySection() {
           </a>
         </div>
       </div>
+
+      <CarDetailModal car={selectedCar} onClose={() => setSelectedCar(null)} />
     </section>
   )
 }

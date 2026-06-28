@@ -15,10 +15,10 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'Inventory', href: '#inventory' },
+    { label: 'How It Works', href: '#how-it-works' },
+    { label: 'Financing', href: '#financing' },
     { label: 'Why Us', href: '#why-us' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Testimonials', href: '#testimonials' },
   ]
 
   return (
@@ -44,12 +44,12 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-white/80 hover:text-white font-body text-sm font-semibold transition-colors duration-200 tracking-wide"
+              className="text-white/80 hover:text-white font-body text-xs font-semibold transition-colors duration-200 tracking-wide whitespace-nowrap"
             >
               {link.label}
             </a>
