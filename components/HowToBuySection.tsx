@@ -15,7 +15,7 @@ const steps = [
     number: '02',
     title: 'Send an Inquiry',
     description:
-      'Click any unit and message us directly on WhatsApp. We respond fast — usually within minutes during business hours.',
+      'Click any unit and message us directly on Facebook Messenger. We respond fast — usually within minutes during business hours.',
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />

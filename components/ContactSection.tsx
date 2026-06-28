@@ -39,7 +39,7 @@ export default function ContactSection() {
     const msg = encodeURIComponent(
       `Hi Best Wheels! My name is ${form.name} (${form.phone}). I'm interested in ${carLabel}.\n\n${form.message}`
     )
-    window.open(`https://wa.me/639498051576?text=${msg}`, '_blank')
+    window.open('https://m.me/bestwheelscardisplay', '_blank')
     setSubmitted(true)
     setTimeout(() => setSubmitted(false), 5000)
   }
@@ -47,7 +47,7 @@ export default function ContactSection() {
   const contactInfo = [
     {
       Icon: Phone,
-      label: 'Phone / WhatsApp',
+      label: 'Phone',
       value: '0949 805 1576',
       href: 'tel:09498051576',
     },
@@ -87,7 +87,7 @@ export default function ContactSection() {
                 Your Next Car?
               </h2>
               <p className="text-ink-muted font-body text-base leading-relaxed mb-8">
-                Send us a message and we&apos;ll get back to you right away on WhatsApp.
+                Send us a message and we&apos;ll get back to you right away on Facebook Messenger.
                 Or you can call or visit us directly in Iloilo City.
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function ContactSection() {
                   </div>
                   <p className="font-display font-700 text-ink text-lg mb-2">Message Sent!</p>
                   <p className="text-ink-muted font-body text-sm">
-                    WhatsApp opened. We&apos;ll reply as soon as we can.
+                    Messenger opened. We&apos;ll reply as soon as we can.
                   </p>
                 </div>
               ) : (
@@ -217,11 +217,11 @@ export default function ContactSection() {
                     className="w-full bg-brand-red hover:bg-brand-red-dark text-white font-display font-700 text-sm uppercase tracking-wider py-4 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2"
                   >
                     <MessageCircle size={16} aria-hidden="true" />
-                    Send via WhatsApp
+                    Send via Messenger
                   </button>
 
                   <p className="text-center text-ink-muted font-body text-xs">
-                    Opens WhatsApp with your message pre-filled. Fast reply guaranteed.
+                    Opens Facebook Messenger. Fast reply guaranteed.
                   </p>
                 </form>
               )}

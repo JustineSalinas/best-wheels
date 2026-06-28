@@ -30,9 +30,6 @@ export default function FinancingCalculator() {
     setDisplayMonthly(monthly)
   }, [monthly])
 
-  const waMsg = encodeURIComponent(
-    `Hi! I'm interested in applying for financing. Vehicle price: ₱${new Intl.NumberFormat('en-PH').format(price)}, Down Payment: ₱${new Intl.NumberFormat('en-PH').format(down)}, Term: ${term} months. Estimated monthly: ₱${new Intl.NumberFormat('en-PH').format(Math.round(monthly))}.`
-  )
 
   return (
     <section id="financing" className="py-20 bg-brand-black" aria-label="Financing Calculator">
@@ -149,12 +146,12 @@ export default function FinancingCalculator() {
             </div>
 
             <a
-              href={`https://wa.me/639498051576?text=${waMsg}`}
+              href="https://m.me/bestwheelscardisplay"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center bg-brand-red hover:bg-brand-red-dark text-white font-display font-700 text-sm uppercase tracking-wider py-4 rounded-xl transition-colors duration-200"
             >
-              Apply for Financing via WhatsApp
+              Apply for Financing via Messenger
             </a>
           </div>
         </div>

@@ -16,6 +16,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'How It Works', href: '#how-it-works' },
+    { label: 'Units', href: '#inventory' },
     { label: 'Financing', href: '#financing' },
     { label: 'Why Us', href: '#why-us' },
     { label: 'Testimonials', href: '#testimonials' },

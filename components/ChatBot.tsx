@@ -83,7 +83,7 @@ function getBotResponse(key: string): BotResponse {
       }
     case 'location':
       return {
-        text: "📍 We're at Guzman-Jesena St., Iloilo City, Philippines 5000\n📞 Call/WhatsApp: 0949 805 1576\n🕐 Open daily — call ahead to confirm unit availability!",
+        text: "📍 We're at Guzman-Jesena St., Iloilo City, Philippines 5000\n📞 Call: 0949 805 1576\n💬 Message us on Facebook Messenger!\n🕐 Open daily — call ahead to confirm unit availability!",
         quickReplies: [
           { label: '💬 Talk to an Agent', key: 'agent' },
           { label: '🗺️ Get Directions', key: 'directions' },
@@ -99,7 +99,7 @@ function getBotResponse(key: string): BotResponse {
       }
     case 'howto':
       return {
-        text: "It's super easy! 😊\n\n1️⃣ Browse our inventory & pick a unit\n2️⃣ Click the car and message us on WhatsApp\n3️⃣ We process the documents & financing\n4️⃣ Drive home! 🚗\n\nWe guide you every step of the way.",
+        text: "It's super easy! 😊\n\n1️⃣ Browse our inventory & pick a unit\n2️⃣ Click the car and message us on Facebook Messenger\n3️⃣ We process the documents & financing\n4️⃣ Drive home! 🚗\n\nWe guide you every step of the way.",
         quickReplies: [
           { label: '🚗 View Available Units', key: 'units' },
           { label: '💬 Talk to an Agent', key: 'agent' },
@@ -107,10 +107,10 @@ function getBotResponse(key: string): BotResponse {
       }
     case 'agent':
       return {
-        text: "Great! You'll be redirected to WhatsApp to chat with our team directly. We typically reply within a few minutes during business hours! 😊",
+        text: "Great! You'll be redirected to Facebook Messenger to chat with our team directly. We typically reply within a few minutes during business hours! 😊",
         quickReplies: [],
         action: () => {
-          window.open('https://wa.me/639498051576?text=Hi! I would like to inquire about your available units.', '_blank')
+          window.open('https://m.me/bestwheelscardisplay', '_blank')
         },
       }
     default:

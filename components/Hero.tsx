@@ -131,7 +131,7 @@ export default function Hero() {
               <ArrowRight size={16} aria-hidden="true" />
             </a>
             <a
-              href="https://wa.me/639498051576"
+              href="https://m.me/bestwheelscardisplay"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-display font-extrabold text-base uppercase tracking-wider px-7 py-3.5 rounded-full transition-all duration-200"
